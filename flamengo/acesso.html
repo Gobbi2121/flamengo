@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  </head>
+  <body>
+    <header class="header">
+      <div class="cabeça">
+        <div class="logo">
+          <a target="_self" href="./index.html">
+            <img class="fla" src="./assets/fla-logo.png" />
+          </a>
+        </div>
+        <div class="registro">
+          <a class= "sobre" target="_self" href="./sobre.html"> Sobre </a>
+          <p></p>
+          <a class="ajuda" target="_blank" href="./help.html"> Ajuda </a>
+          <p></p>
+          <a class= "login" target="_self" href="./index.php"> Login </a>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <div>
+        <a target="_blank" href="./compra.html">
+          <img class="propaganda" src="./assets/Artboard_1.png" />
+        </a>
+      </div>
+    </footer>
+    <div>
+        <div class="h2">
+            <h2>Mais Vendidas</h2>
+        </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/Blusapreta.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/blusalistrada.png" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/blusapadrao.png" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/short.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="/assets/jaqueta.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/meia.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/blusabranca.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/jaquetafeminia.jpg" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./assets/vestido.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-scrollbar"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

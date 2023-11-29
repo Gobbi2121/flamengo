@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+
+.cabeça {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;    
+    align-items: center;
+    background-color: rgb(201, 30, 30);
+}
+
+.ajuda {
+    display: flex;
+      font-weight: bold;
+      font-family:'Roboto', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  .sobre {
+    display: flex;
+      font-weight: bold;
+      font-family:'Roboto', sans-serif;
+      text-decoration: none;
+      color: #ffffff;
+  }
+  
+  .login {
+    display: flex;
+      font-weight: bold;
+      font-family:'Roboto', sans-serif;   
+      text-decoration: none;
+      color: #c41717;
+      background-color: rgb(255, 255, 255);
+      padding: 12px 24px;
+      border-radius: 4px;
+  }
+
+  p {
+    margin: 0px 10px;
+}
+
+body {
+    height: 200px;
+}
+
+.logo {
+    display: flex;
+    height: 80px;
+    width: 80px;
+}
+
+.fla {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.registro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.venda {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 100px auto;
+    gap: 24px;
+}
+
+.blusa {
+    height: 580px;
+    width: 534px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.15);
+}
+
+.descricao {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    color: #777;
+    font-size: 20px;
+    text-align: left;
+}
+
+.size-buttons {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .size-button {
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #777;
+  }
+
+  .buy-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .buy-container input {
+    width: 20px;
+    text-align: center;
+    border: none;
+    font-size: 24px;
+  }
+
+  .buy-button {
+    background-color: #C91E1E;
+    border-radius: 4px;
+    width: 394px;
+    height: 54px;
+    text-align: center;
+    color: #fff;
+    border: none;
+  }
+  
+  .size-button:hover {
+    background-color: rgb(141, 0, 0);
+    color: #fff;
+  }
+
+  .preco {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .descricao {
+    text-align: center;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  .card {
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+    margin-right: 16px;
+  }
+  
+  .card img {
+    width: 346px;
+    height: auto;
+  }
+
+  body {
+    background: #ffffff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+      margin-top: 100px;
+      font-size: 50px;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #000000;
+      margin: 0 auto;
+      margin-top: 50px;
+      width: fit-content;
+  }
+
+.swiper {
+  width: 60%;
+  height: 100%;
+  margin-top: 40px;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+  @media only screen and (min-width: 769px) {
+    .swiper-slide:first-child {
+      transition: transform 100ms;
+    }
+  
+    .swiper-slide:first-child img {
+      transition: box-shadow 500ms;
+    }
+  
+    .swiper-slide.swiper-slide-active:first-child {
+      transform: translateX(50%);
+      z-index: 2;
+    }
+  
+    .swiper-slide:nth-child(2) {
+      transition: transform 100ms;
+    }
+  
+    .swiper-slide.swiper-slide-next:nth-child(2) {
+      transform: translateX(55%);
+      z-index: 1;
+    }
+  
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-active:first-child {
+      transform: translateX(-50%);
+    }
+  
+    .swiper[dir="rtl"] .swiper-slide.swiper-slide-next:nth-child(2) {
+      transform: translateX(-55%);
+    }
+  }

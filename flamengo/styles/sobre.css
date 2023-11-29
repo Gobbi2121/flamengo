@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+}
+
+.cabeça {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;    
+    align-items: center;
+    background-color: rgb(201, 30, 30);
+}
+
+.logo {
+    display: flex;
+    height: 80px;
+    width: 80px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.fla {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.registro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ajuda {
+display: flex;
+  font-weight: bold;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sobre {
+display: flex;
+  font-weight: bold;
+  font-family:'Roboto', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.login {
+display: flex;
+  font-weight: bold;
+  font-family:'Roboto', sans-serif;   
+  text-decoration: none;
+  color: #c41717;
+  background-color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+p {
+    margin: 0px 10px;
+}
+
+body, html {
+    height: 75%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78%;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+  }
+  
+  .content h1 {
+    color: #333;
+  }
+  
+  .content p {
+    color: #555;
+  }
+  
+  .urubu {
+    display: flex;
+    margin-top: 6%;
+    margin-left: 55%;
+    height: 80%;
+    width: 45%;
+  }
